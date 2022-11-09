@@ -7,7 +7,7 @@ group='io.github.handharbeni'
 ext {
     // Provide your own coordinates here
     PUBLISH_GROUP_ID = 'io.github.handharbeni'
-    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_VERSION = '1.0.3'
     PUBLISH_ARTIFACT_ID = 'boilerplate-module'
     PUBLISH_DESCRIPTION = 'Simple Boilerplate'
     PUBLISH_URL = 'https://github.com/handharbeni/AndroidBoilerplate'
@@ -34,6 +34,8 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 32
+        versionCode 4
+        versionName "1.0.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
