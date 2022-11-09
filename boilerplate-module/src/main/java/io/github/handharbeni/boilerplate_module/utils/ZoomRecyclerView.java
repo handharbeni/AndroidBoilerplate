@@ -119,7 +119,7 @@ public class ZoomRecyclerView extends RecyclerView {
     @Override
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.save(Canvas.MATRIX_SAVE_FLAG);
+        canvas.save();
         canvas.translate(mPosX, mPosY);
         canvas.scale(mScaleFactor, mScaleFactor);
         canvas.restore();
@@ -127,7 +127,7 @@ public class ZoomRecyclerView extends RecyclerView {
 
     @Override
     protected void dispatchDraw(@NonNull Canvas canvas) {
-        canvas.save(Canvas.MATRIX_SAVE_FLAG);
+        canvas.save();
         if (mScaleFactor == 1.0f) {
             mPosX = 0.0f;
             mPosY = 0.0f;

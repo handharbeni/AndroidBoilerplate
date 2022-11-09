@@ -3,10 +3,10 @@ package io.github.handharbeni.boilerplate_module.web_services;
 import android.app.Activity;
 
 
-import com.manishkprboilerplate.web_services.network.NetworkCallBack;
-import com.manishkprboilerplate.web_services.network.RequestTask;
-
 import java.util.HashMap;
+
+import io.github.handharbeni.boilerplate_module.web_services.network.NetworkCallBack;
+import io.github.handharbeni.boilerplate_module.web_services.network.RequestTask;
 
 public class RestClient {
 

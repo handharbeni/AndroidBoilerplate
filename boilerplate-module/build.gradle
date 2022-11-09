@@ -1,6 +1,31 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
+group='io.github.handharbeni'
+
+ext {
+    // Provide your own coordinates here
+    PUBLISH_GROUP_ID = 'io.github.handharbeni'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'boilerplate-module'
+    PUBLISH_DESCRIPTION = 'Simple Boilerplate'
+    PUBLISH_URL = 'https://github.com/handharbeni/AndroidBoilerplate'
+    PUBLISH_LICENSE_NAME = 'Apache License 2.0'
+    PUBLISH_LICENSE_URL =
+            'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    PUBLISH_DEVELOPER_ID = 'mhandharbeni'
+    PUBLISH_DEVELOPER_NAME = 'Muhammad Handharbeni'
+    PUBLISH_DEVELOPER_EMAIL = 'mhandharbeni@gmail.com'
+    PUBLISH_SCM_CONNECTION =
+            'scm:git:github.com/handharbeni/AndroidBoilerplate.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION =
+            'scm:git:ssh://github.com/handharbeni/AndroidBoilerplate.git'
+    PUBLISH_SCM_URL =
+            'https://github.com/handharbeni/AndroidBoilerplate/tree/master'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
 
 android {
     namespace 'io.github.handharbeni.boilerplate_module'
@@ -23,6 +48,9 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        baseline file("lint-baseline.xml")
     }
 }
 

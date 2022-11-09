@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.manishkprboilerplate.R;
-import com.manishkprboilerplate.models.HttpResponse;
-
 import java.util.HashMap;
+
+import io.github.handharbeni.boilerplate_module.R;
+import io.github.handharbeni.boilerplate_module.models.HttpResponse;
 
 
 public class RequestTask extends AsyncTask<HttpResponse,Void,HttpResponse> {

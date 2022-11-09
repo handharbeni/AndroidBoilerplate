@@ -1,7 +1,13 @@
 plugins {
     id 'com.android.application'
 }
-
+ext {
+    // Provide your own coordinates here
+    PUBLISH_GROUP_ID = 'io.github.handharbeni'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'boilerplate-module'
+}
+group='io.github.handharbeni'
 android {
     namespace 'io.github.handharbeni.androidboilerplate'
     compileSdk 32

@@ -1,9 +1,5 @@
 package io.github.handharbeni.boilerplate_module.web_services.network;
 
-
-
-import com.manishkprboilerplate.models.HttpResponse;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,6 +13,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
+
+import io.github.handharbeni.boilerplate_module.models.HttpResponse;
 
 
 public class WebHttp {
@@ -84,8 +82,6 @@ public class WebHttp {
     }
 
     public static HttpResponse postMethod(String urlAddress,HashMap<String, String> postDataParams){
-
-
         URL url;
         HttpURLConnection conn=null;
         InputStream inputStream = null;

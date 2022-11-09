@@ -4,6 +4,8 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
+import retrofit2.HttpException;
+
 /**
  * Created by Munish Kapoor on 15/2/17.
  */
