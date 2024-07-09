@@ -17,6 +17,7 @@ import io.github.handharbeni.androidboilerplate.databinding.ActivityMainBinding;
 import io.github.handharbeni.boilerplate_module.web_services.ClientOkHttp;
 import io.github.handharbeni.boilerplate_module.web_services.RxUtil;
 
+
 import rx.Observable;
 import android.view.Menu;
 import android.view.MenuItem;

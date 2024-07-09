@@ -2,11 +2,12 @@ package io.github.handharbeni.boilerplate_module.utils;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class ZoomRecyclerView extends RecyclerView {
     private static final int INVALID_POINTER_ID = -1;
